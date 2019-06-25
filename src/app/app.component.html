@@ -1,2 +1,12 @@
-<app-cabecera></app-cabecera>
-<app-pie></app-pie>
+<div class="container mt-5">
+  <button type="button" class="btn btn-primary" (click)="mostrar=!mostrar">Mostrar={{!mostrar}}</button>
+  <div class="alert alert-danger" role="alert" *ngIf="mostrar">
+    <h4 class="alert-heading"></h4>
+    <p>Proident elit ullamco elit voluptate nulla elit proident est sunt pariatur sit enim esse aliqua. Dolore aute mollit labore ipsum tempor. Dolor exercitation incididunt irure consectetur. Laborum cillum qui consequat irure ut esse ad. Tempor proident tempor excepteur aliqua consectetur consequat non aute fugiat consequat fugiat incididunt. Cillum anim aliqua voluptate ad cillum labore laboris Lorem anim id.</p>
+  </div>
+  <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading"></h4>
+      <p>Proident elit ullamco elit voluptate nulla elit proident est sunt pariatur sit enim esse aliqua. Dolore aute mollit labore ipsum tempor. Dolor exercitation incididunt irure consectetur. Laborum cillum qui consequat irure ut esse ad. Tempor proident tempor excepteur aliqua consectetur consequat non aute fugiat consequat fugiat incididunt. Cillum anim aliqua voluptate ad cillum labore laboris Lorem anim id.</p>
+    </div>
+  
+</div>
