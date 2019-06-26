@@ -1,18 +1,11 @@
 <div class="container mt-5">
-  <button type="button" class="btn btn-primary" (click)="mostrar=!mostrar">Mostrar={{!mostrar}}</button>
+  <button type="button" class="btn btn-primary">Uno</button>
+  <button type="button" class="btn btn-primary">Dos</button>
   
-  <div class="alert alert-danger" role="alert" *ngIf="mostrar; else mostrarOtro;">
-    <h4 class="alert-heading"></h4>
+  <div class="alert alert-danger" role="alert">
     <p>Mostrar Proident elit ullamco elit voluptate nulla elit proident est sunt pariatur sit enim esse aliqua. Dolore aute mollit labore ipsum tempor. Dolor exercitation incididunt irure consectetur. Laborum cillum qui consequat irure ut esse ad. Tempor proident tempor excepteur aliqua consectetur consequat non aute fugiat consequat fugiat incididunt. Cillum anim aliqua voluptate ad cillum labore laboris Lorem anim id.</p>
   </div>
-  
-  <ng-template #mostrarOtro>
-      <div class="alert alert-success" role="alert">
-          <h4 class="alert-heading"></h4>
-          <p> mostrarOtro Proident elit ullamco elit voluptate nulla elit proident est sunt pariatur sit enim esse aliqua. Dolore aute mollit labore ipsum tempor. Dolor exercitation incididunt irure consectetur. Laborum cillum qui consequat irure ut esse ad. Tempor proident tempor excepteur aliqua consectetur consequat non aute fugiat consequat fugiat incididunt. Cillum anim aliqua voluptate ad cillum labore laboris Lorem anim id.</p>
-      </div>    
-  </ng-template>
-  
-
-  
+  <div class="alert alert-success" role="alert">
+    <p> mostrarOtro Proident elit ullamco elit voluptate nulla elit proident est sunt pariatur sit enim esse aliqua. Dolore aute mollit labore ipsum tempor. Dolor exercitation incididunt irure consectetur. Laborum cillum qui consequat irure ut esse ad. Tempor proident tempor excepteur aliqua consectetur consequat non aute fugiat consequat fugiat incididunt. Cillum anim aliqua voluptate ad cillum labore laboris Lorem anim id.</p>
+  </div>
 </div>
