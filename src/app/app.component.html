@@ -1,25 +1,5 @@
-<div class="container mt-5">
-  <ul>
-    <li *ngFor="let lenguaje of lenguajes; index as i; ">{{i+1}} {{lenguaje}}</li>
-  </ul>
-
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Popularidad</th>
-        <th scope="col">Edad</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr  *ngFor="let framework of frameworks; index as i;" >
-        <th scope="row">{{i+1}}</th>
-        <td>{{framework.nombre}}</td>
-        <td>{{framework.pop}}</td>
-        <td>{{framework.edad}}</td>
-      </tr>
-    </tbody>
-  </table>
-
+<div class="container">
+  <app-cabecera></app-cabecera>
+  <router-outlet></router-outlet>
+  <app-pie></app-pie>
 </div>
