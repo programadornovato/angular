@@ -1,11 +1,25 @@
 <div class="container mt-5">
-  <button type="button" class="btn btn-primary" (click)="fondo='uno'" >Uno</button>
-  <button type="button" class="btn btn-primary" (click)="fondo='dos'" >Dos</button>
-  
-  <div class="alert alert-danger d-none" role="alert" [ngClass]="{'d-block':fondo=='uno'}">
-    <p>Mostrar Proident elit ullamco elit voluptate nulla elit proident est sunt pariatur sit enim esse aliqua. Dolore aute mollit labore ipsum tempor. Dolor exercitation incididunt irure consectetur. Laborum cillum qui consequat irure ut esse ad. Tempor proident tempor excepteur aliqua consectetur consequat non aute fugiat consequat fugiat incididunt. Cillum anim aliqua voluptate ad cillum labore laboris Lorem anim id.</p>
-  </div>
-  <div class="alert alert-success d-none" role="alert" [ngClass]="{'d-block':fondo=='dos'}">
-    <p> mostrarOtro Proident elit ullamco elit voluptate nulla elit proident est sunt pariatur sit enim esse aliqua. Dolore aute mollit labore ipsum tempor. Dolor exercitation incididunt irure consectetur. Laborum cillum qui consequat irure ut esse ad. Tempor proident tempor excepteur aliqua consectetur consequat non aute fugiat consequat fugiat incididunt. Cillum anim aliqua voluptate ad cillum labore laboris Lorem anim id.</p>
-  </div>
+  <ul>
+    <li *ngFor="let lenguaje of lenguajes; index as i; ">{{i+1}} {{lenguaje}}</li>
+  </ul>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Popularidad</th>
+        <th scope="col">Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let framework of frameworks; index as i;" >
+        <th scope="row">{{i+1}}</th>
+        <td>{{framework.nombre}}</td>
+        <td>{{framework.pop}}</td>
+        <td>{{framework.edad}}</td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>
