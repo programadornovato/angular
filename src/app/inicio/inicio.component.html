@@ -10,7 +10,7 @@
   <tbody>
     <tr  *ngFor="let framework of frameworks; index as i;" >
       <th scope="row">{{i+1}}</th>
-      <td>{{framework.nombre}}</td>
+      <td><a [routerLink]="['/framework',i]" >{{framework.nombre}}</a></td>
       <td>{{framework.pop}}</td>
       <td>{{framework.edad}}</td>
     </tr>

@@ -16,4 +16,7 @@ export class FrameworkService {
   regresaFramework(){
     return this.frameworks;
   }
+  regresaUnFramework(i){
+    return this.frameworks[i];
+  }
 }

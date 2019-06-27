@@ -11,9 +11,11 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { UbicacionComponent } from './ubicacion/ubicacion.component';
 import { E404Component } from './e404/e404.component';
+import { FrameworkComponent } from './framework/framework.component';
 const routes: Routes = [
   { path: 'formulario', component: FormularioComponent },
   { path: 'ubicacion', component: UbicacionComponent },
+  { path: 'framework/:id', component: FrameworkComponent },
   { path: '404', component: E404Component },
   { path: '', component: InicioComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' },
@@ -26,7 +28,8 @@ const routes: Routes = [
     FormularioComponent,
     InicioComponent,
     UbicacionComponent,
-    E404Component
+    E404Component,
+    FrameworkComponent
   ],
   imports: [
     BrowserModule,
