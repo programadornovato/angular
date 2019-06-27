@@ -1,3 +1,18 @@
-<p>
-  inicio works!
-</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Popularidad</th>
+      <th scope="col">Edad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let framework of frameworks; index as i;" >
+      <th scope="row">{{i+1}}</th>
+      <td>{{framework.nombre}}</td>
+      <td>{{framework.pop}}</td>
+      <td>{{framework.edad}}</td>
+    </tr>
+  </tbody>
+</table>
